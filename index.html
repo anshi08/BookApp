@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>BOOK LIST</title>
+    <STYLE>
+        label{
+           margin-left: 13%; 
+           color: white;
+        }
+        .form-control{
+            margin-left: 13%;
+            width: 80%;
+        }
+        body{
+            background-color: black;
+        }
+        #sub{
+            width: 80%;
+            margin-left: 13%;
+        }
+        #tab{
+            width: 80%;
+            margin-left: 13%;
+        }
+        #tab thead th{
+            color: white;
+        }
+        #tab tbody{
+            color: white;
+        }
+    </STYLE>
+</head>
+<body>
+    <div class="container mt-3">
+        <h1 class="display-4 text-center" style="color: white;">
+            <i class="fas fa-book-open text-primary"></i>MY<SPAN class="text-primary"> BOOK</SPAN>LIST</h1>
+        </h1>
+    </div> 
+      <br>
+      <form id="book-form">
+        <div class="form-group">
+            <label for="title">TITLE:</label>      <!--ID HAI YE FOR-->
+            <input type="text" id="title" class="form-control" required>    <!--text ki id bhi di hai-->
+            <br>
+            <label for="author">AUTHOR:</label>
+            <input type="text" id="author" class="form-control" required>
+            <br>
+            <label for="isbn">ISBN#</label>
+            <input type="text" id="isbn" class="form-control" required>
+             <br>
+           <input type="submit" value="Add book" id="sub" class="btn btn-primary btn-block">
+       </form> 
+    
+    </div>
+    <br>
+    <table class="table mt-4" id="tab">
+        <thead>
+            <tr>
+                <th>TITLE</th>
+                <th>AUTHOR</th>
+                <th>ISBN</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="book-list">
+        </tbody>
+    </table>
+    
+
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
